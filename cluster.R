@@ -31,14 +31,6 @@ for (n in 1:N) {
 	# Store data.
 	data <- rbind(data, data.frame(description=desc, background=sprintf("%0.2f", bg), gridlines=sprintf("%0.2f", grid), inkdot=sprintf("%0.2f", dot), ink.grid.ratio=sprintf("%0.2f", dot/grid)))
 
-	# # Output cluster info.
-	# cat(sprintf('Sample: %s\n', desc), file=stdout())
-	# cat(sprintf('Background:\t%0.2f\n', bg), file=stdout())
-	# cat(sprintf('Gridlines:\t%0.2f\n', grid), file=stdout())
-	# cat(sprintf('Ink dot:\t%0.2f\n', dot), file=stdout())
-	# cat(sprintf('Ink-Grid ratio:\t%0.2f\n', dot/grid), file=stdout())
-	# cat(sprintf('\n'), file=stdout())
-
 	# Plot image, with clusters colored separately and no extra junk around plot.
 	kcs <- matrix(k$cluster, nrow=dim(i)[1], ncol=dim(i)[2])
 	img <- t(kcs)[,nrow(kcs):1] # Align orientation with scan.
