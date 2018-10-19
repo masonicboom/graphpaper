@@ -1,10 +1,10 @@
 # Graph Paper Analysis
 
-See full writeup at https://masonsimon.com/2018/04/16/quantifying-graph-paper-quality/.
+
 
 ## Usage
 
-Run `Rscript cluster.R` to generate `graphpaper*.png` and output cluster stats. Read `cluster.R` (it's short) and [https://masonsimon.com/2018/04/16/quantifying-graph-paper-quality/](the writeup), for more details.
+Run `make`. That will generate the cluster results in `results/clustered_*.png`, the numerical results in `results.tsv`, and print out those numerical results in a nice table. Read `cluster.R` (it's short) and [https://masonsimon.com/2018/04/16/quantifying-graph-paper-quality/](the writeup), for more details.
 
 ## Equipment
 
@@ -27,11 +27,21 @@ For each notebook,
 
 ## Results
 
-| Description | Notebook | Scan | Clusters | Gridlines | Grid-Ink Ratio |
+| Description | Notebook | Scan | Clusters | Gridlines | Ink/Grid Ratio |
 | ----------- | -------- | ---- | -------- | --------- | -------------- |
-| Unmarked brown notebook | <img src="notebook1.JPG" height="250"> | ![](graphpaper1.png) | ![](clustered1.png) | 0.12 | 6.57 |
-| Campus S5 by Kokuyo | <img src="notebook2.JPG" height="250"> | ![](graphpaper2.png) | ![](clustered2.png) | 0.10 | 7.84 |
-| Moleskin | <img src="notebook3.JPG" height="250"> | ![](graphpaper3.png) | ![](clustered3.png) | 0.20 | 4.11 |
-| Bienfang Gridded Paper | <img src="notebook4.JPG" height="250"> | ![](graphpaper4.png) | ![](clustered4.png) | 0.07 | 11.74 |
-| 2-Hole Filler by Kokuyo | <img src="notebook5.JPG" height="250"> | ![](graphpaper5.png) | ![](clustered5.png) | 0.14 | 5.71 |
-| Fabriano Spiral Notebook | <img src="notebook6.JPG" height="250"> | ![](graphpaper6.png) | ![](clustered6.png) | 0.15 | 5.32 |
+| 7-11_notepad_s_86x135mm_5mm | <img src="notebooks/7-11_notepad_s_86x135mm_5mm.JPG" height="250"> | 0.04 | 0.11 | 0.81 | 7.27 |
+| 7-11_ring_note_a6_y | <img src="notebooks/7-11_ring_note_a6_y.JPG" height="250"> | 0.04 | 0.10 | 0.80 | 7.90 |
+| alvin_ALGO8 | <img src="notebooks/alvin_ALGO8.JPG" height="250"> | 0.03 | 0.25 | 0.80 | 3.22 |
+| bienfang | <img src="notebooks/bienfang.JPG" height="250"> | 0.04 | 0.07 | 0.82 |11.88 |
+| brown_noname | <img src="notebooks/brown_noname.JPG" height="250"> | 0.04 | 0.11 | 0.81 | 7.16 |
+| cac.rea_a4_9 | <img src="notebooks/cac.rea_a4_9.JPG" height="250"> | 0.03 | 0.06 | 0.82 |14.44 |
+| conception_estranger_di_costarica_b6 | <img src="notebooks/conception_estranger_di_costarica_b6.JPG" height="250"> | 0.04 | 0.17 | 0.80 | 4.63 |
+| fabriano_ecoqua | <img src="notebooks/fabriano_ecoqua.JPG" height="250"> | 0.03 | 0.16 | 0.80 | 5.08 |
+| kokuyo_campus_5mm_colorful | <img src="notebooks/kokuyo_campus_5mm_colorful.JPG" height="250"> | 0.07 | 0.10 | 0.79 | 7.96 |
+| kokuyo_campus_s5 | <img src="notebooks/kokuyo_campus_s5.JPG" height="250"> | 0.04 | 0.10 | 0.81 | 8.37 |
+| kokuyo_filler_a5_new | <img src="notebooks/kokuyo_filler_a5_new.JPG" height="250"> | 0.03 | 0.11 | 0.78 | 7.38 |
+| kokuyo_filler_a5_old | <img src="notebooks/kokuyo_filler_a5_old.JPG" height="250"> | 0.04 | 0.14 | 0.79 | 5.66 |
+| maruman_mnemosyne_roots_5mm | <img src="notebooks/maruman_mnemosyne_roots_5mm.JPG" height="250"> | 0.04 | 0.13 | 0.80 | 5.99 |
+| maruman_n767_mps600 | <img src="notebooks/maruman_n767_mps600.JPG" height="250"> | 0.04 | 0.07 | 0.81 |12.05 |
+| maruman_spiral_note_5mm | <img src="notebooks/maruman_spiral_note_5mm.JPG" height="250"> | 0.05 | 0.11 | 0.80 | 7.44 |
+| okina_project_paper_65x90_5mm | <img src="notebooks/okina_project_paper_65x90_5mm.JPG" height="250"> | 0.03 | 0.06 | 0.81 |14.11 |
